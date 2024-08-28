@@ -40,6 +40,7 @@ public class ParametrosTest {
 
         try{
             instancia.setValidadorBiometrico(-1);
+            fail();
         } catch(IllegalArgumentException e){
             assertEquals("Valor inválido! Use 0 ou 1.", e.getMessage());
         }
